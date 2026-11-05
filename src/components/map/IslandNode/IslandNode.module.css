@@ -1,0 +1,60 @@
+/* ────────────────────────────── Khung node ────────────────────────────── */
+
+.island {
+  width: 140px;
+  height: 85px;
+  text-align: center;
+  position: relative;
+  /* React Flow tắt pointer-events trên wrapper; bật lại cho hover và nút bấm. */
+  pointer-events: auto;
+  transition: opacity 0.2s;
+  --faction: #9caeb9;
+}
+
+/* ────────────────────────── Trạng thái: độ mờ ─────────────────────────── */
+
+/* Đảo trung lập tự sáng khi hover, focus, liên kết hoặc khớp filter. */
+.neutral {
+  opacity: var(--neutral-opacity, 0.4);
+}
+
+.neutral:hover,
+.neutral:focus-within,
+.neutral.active,
+.neutral.linked,
+.neutral.hot {
+  opacity: 1;
+}
+
+/* Trung tâm 4: độ mờ đặt trên ảnh (CenterIcon), không trên cả node, để nhãn
+   và popup điểm vẫn rõ. */
+.island.center {
+  opacity: 1;
+}
+
+/* Dim (filter guild/player) luôn thắng các trạng thái làm sáng ở trên, kể cả
+   neutral + hot và trung tâm. */
+.island.dim {
+  opacity: 0.1;
+}
+
+/* Popup điểm nằm dưới nhãn: mép dưới ảnh + nhãn + khoảng hở như node thường. */
+.center {
+  --stats-top: calc(42.5px + var(--icon-box) / 2 + 30px);
+}
+
+/* ───────────────── Debug: tâm node trùng điểm neo edge ────────────────── */
+
+.centerDot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px;
+  border-radius: 50%;
+  background: #e5484d;
+  box-shadow: 0 0 0 1.5px #ffffff;
+  z-index: 40;
+  pointer-events: none;
+}

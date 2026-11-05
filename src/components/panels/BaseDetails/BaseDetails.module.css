@@ -1,0 +1,23 @@
+/* Card tóm tắt phe — cùng bố cục dòng BXH Phe, viền màu phe. */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  padding: 11px 10px;
+  border: 1px solid;
+  border-left-width: 3px;
+  border-radius: 6px;
+  font-size: 11px;
+  background: #ffffff;
+}
+
+/* Phe hạng 1 theo điểm phe: cả card nền màu phe nhạt. */
+.card.leading {
+  background: color-mix(in srgb, var(--tint) 10%, #ffffff);
+}
+
+.rank {
+  font-size: 10px;
+  color: #8496a1;
+}
