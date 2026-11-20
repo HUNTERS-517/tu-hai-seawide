@@ -1,0 +1,22 @@
+.city {
+  position: absolute;
+  width: 1700px;
+  height: auto;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  opacity: 0.15;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.lit {
+  opacity: 0.25;
+}
+
+/* Cảm ứng: ảnh rộng 1700px world — transition opacity biến nó thành layer
+   động cỡ lớn trên WebKit; đổi tức thì. */
+@media (hover: none) {
+  .city {
+    transition: none;
+  }
+}

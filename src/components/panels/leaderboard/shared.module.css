@@ -1,0 +1,95 @@
+/* Primitive dùng chung các board: dòng accordion (item/summary/rank), khối
+   allocation khi mở và thanh sort. Class riêng một board nằm ở module của
+   board đó; pill filter ở shared/FilterPills.module.css. `.ranking h2/p` bọc
+   ngoài vẫn áp vào h2/p ở đây qua DOM. */
+.item {
+  display: block;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 0;
+  border-bottom: 1px solid #eaeef0;
+  font-size: 11px;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Row tô màu phe (inline style qua tintStyle): Tab Cứ điểm = phe đang chiếm,
+   Tab Phe = phe dẫn đầu. Viền trong suốt cho row không tô để thẳng hàng. */
+.tintedSummary {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-left: 3px solid transparent;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.rank {
+  font-size: 10px;
+  color: #8496a1;
+  min-width: 17px;
+}
+
+.summary > b {
+  font-size: 10px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Chevron luôn là con cuối của summary; icon khác trong row đứng yên. */
+.item[open] > .summary > svg:last-child {
+  transform: rotate(90deg);
+}
+
+.allocation {
+  padding: 8px 10px;
+  background: #eff2f4;
+  border-radius: 5px;
+  max-height: 225px;
+  overflow: auto;
+}
+
+.allocation button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 7px 2px;
+  font-size: 10px;
+  color: #5d707b;
+}
+
+.allocation button:hover {
+  color: #0d8a65;
+}
+
+.allocation b {
+  font-weight: 400;
+}
+
+/* Checkbox/nút sort. */
+.sortBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -8px;
+  margin-bottom: 12px;
+}
+
+.sortOption {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #8b9aa4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortOption input {
+  margin: 0;
+  accent-color: #0d8a65;
+}

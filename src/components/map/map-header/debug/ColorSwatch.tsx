@@ -1,0 +1,75 @@
+import { useEffect, useRef, useState, type ComponentType } from "react";
+import { useDismiss } from "../../../../hooks/useDismiss";
+import styles from "./ColorSwatch.module.css";
+
+// HexAlphaColorPicker của react-colorful — DEV hoặc sau easter egg, load động.
+type HexAlphaPicker = ComponentType<{
+  color: string;
+  onChange: (color: string) => void;
+}>;
+
+export interface ColorSwatchProps {
+  label: string;
+  value: string;
+  onChange: (hex8: string) => void;
+}
+
+// Chip debug chọn màu: swatch mở popover react-colorful (màu + alpha trong
+// một control); click ra ngoài hoặc Esc thì đóng. value/onChange làm việc trên hex
+// 6 hoặc 8 ký tự — picker trả #rrggbbaa (alpha 1 thì rút gọn 6 ký tự).
+export function ColorSwatch({ label, value, onChange }: ColorSwatchProps) {
+  const [Picker, setPicker] = useState<HexAlphaPicker | null>(null);
+  const [open, setOpen] = useState(false);
+  const chipRef = useRef<HTMLDivElement>(null);
+  const alpha =
+    value.length === 9
+      ? Number((parseInt(value.slice(7, 9), 16) / 255).toFixed(2))
+      : 1;
+  const colorValue = `${value.slice(0, 7)} , ${alpha}`;
+
+  // Swatch chỉ mount ở DEV hoặc sau easter egg — dynamic import để react-colorful
+  // thành chunk riêng, user thường không tải. Lỗi tải (vd 404 chunk cũ sau
+  // deploy) thì nuốt: popover không mở, trang không crash.
+  useEffect(() => {
+    import("react-colorful")
+      .then((m) => setPicker(() => m.HexAlphaColorPicker))
+      .catch(() => {});
+  }, []);
+
+  useDismiss(open, [chipRef], () => setOpen(false));
+
+  return (
+    <div ref={chipRef} className={styles.bgPicker} title={label}>
+      <button
+        type="button"
+        className={styles.label}
+        onClick={() => setOpen(true)}
+        aria-expanded={open}
+      >
+        {label}
+      </button>
+      <button
+        type="button"
+        className={styles.swatch}
+        style={{ background: value }}
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-label={`Mở picker ${label.toLowerCase()}`}
+      />
+      {open && Picker && (
+        <div className={styles.pickerPop}>
+          <Picker color={value} onChange={onChange} />
+          {/* Mã hex + alpha (0–1) — click để chọn hết & copy. */}
+          <input
+            className={styles.colorValue}
+            value={colorValue}
+            title={value}
+            readOnly
+            onFocus={(e) => e.currentTarget.select()}
+            aria-label={`Mã màu hex và alpha ${label.toLowerCase()}`}
+          />
+        </div>
+      )}
+    </div>
+  );
+}
