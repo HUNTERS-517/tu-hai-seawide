@@ -4340,6 +4340,13 @@
    "server": 537,
    "guild": "VN"
   },
+  "53799235": {
+   "name": "VNBee",
+   "power": 2518376,
+   "server": 537,
+   "guildId": "5370011",
+   "guild": "VN"
+  },
   "53830144": {
    "name": "เคยอม",
    "guildId": "5370011",
@@ -4919,6 +4926,13 @@
    "guildId": "5540013",
    "power": 22341720,
    "server": 554,
+   "guild": "GUCCI"
+  },
+  "55496808": {
+   "name": "GUxBắp",
+   "power": 12407630,
+   "server": 554,
+   "guildId": "5540013",
    "guild": "GUCCI"
   },
   "55507512": {
@@ -5607,6 +5621,13 @@
    "server": 569,
    "guild": "DARKSKY"
   },
+  "57002769": {
+   "name": "VNVIET",
+   "power": 5072984,
+   "server": 570,
+   "guildId": "5700014",
+   "guild": "VNs1st"
+  },
   "57002860": {
    "name": "VNxBéo",
    "guildId": "5700014",
@@ -5789,6 +5810,13 @@
    "server": 572,
    "guild": "VNs1st"
   },
+  "57214970": {
+   "name": "VNsMeos",
+   "power": 12001331,
+   "server": 572,
+   "guildId": "5700014",
+   "guild": "VNs1st"
+  },
   "57224876": {
    "name": "DannyLe",
    "guildId": "5700014",
@@ -5876,6 +5904,13 @@
   "57456493": {
    "name": "ทาชิมาา",
    "power": 4865334,
+   "server": 574,
+   "guildId": "5740012",
+   "guild": "AngleTH"
+  },
+  "57456804": {
+   "name": "คนเมกา",
+   "power": 1435604,
    "server": 574,
    "guildId": "5740012",
    "guild": "AngleTH"

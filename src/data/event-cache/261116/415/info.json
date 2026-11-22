@@ -3082,6 +3082,13 @@
    "guildId": "3900011",
    "guild": "VNVC"
   },
+  "39294569": {
+   "name": "GầyHồngÂn",
+   "power": 5720830,
+   "server": 392,
+   "guildId": "3900011",
+   "guild": "VNVC"
+  },
   "39325294": {
    "name": "AEBon",
    "power": 17974620,
@@ -3249,6 +3256,13 @@
    "power": 5537893,
    "server": 398,
    "guild": "VIETNAM"
+  },
+  "39951637": {
+   "name": "LậtMinhKhánh",
+   "power": 111845,
+   "server": 399,
+   "guildId": "4000016",
+   "guild": "TinẢo"
   },
   "39971853": {
    "name": "ĐồmLongHải",
@@ -3828,6 +3842,13 @@
    "guildId": "4130011",
    "power": 85048180,
    "server": 415,
+   "guild": "TheSea"
+  },
+  "41537512": {
+   "name": "SEAXYZZ",
+   "power": 17322009,
+   "server": 415,
+   "guildId": "4130011",
    "guild": "TheSea"
   },
   "41597417": {
@@ -4514,6 +4535,13 @@
    "guildId": "4290006",
    "power": 12933189,
    "server": 429,
+   "guild": "VNSO1"
+  },
+  "42931649": {
+   "name": "VNHau",
+   "power": 5940111,
+   "server": 429,
+   "guildId": "4290006",
    "guild": "VNSO1"
   },
   "42931749": {

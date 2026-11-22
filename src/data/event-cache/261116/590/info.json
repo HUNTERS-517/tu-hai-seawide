@@ -4218,6 +4218,13 @@
    "server": 594,
    "guild": "Asgard"
   },
+  "59406308": {
+   "name": "DRgakut",
+   "power": 8349228,
+   "server": 594,
+   "guildId": "5960014",
+   "guild": "Gehenna"
+  },
   "59406992": {
    "name": "ÊchMinhNhi",
    "guildId": "5960014",
@@ -4592,6 +4599,13 @@
   "60214062": {
    "name": "NGxKGR",
    "power": 20690976,
+   "server": 602,
+   "guildId": "6040057",
+   "guild": "NGHIỆN"
+  },
+  "60214667": {
+   "name": "NGNATRA",
+   "power": 12557323,
    "server": 602,
    "guildId": "6040057",
    "guild": "NGHIỆN"
@@ -4995,6 +5009,13 @@
    "server": 610,
    "guild": "Døminus"
   },
+  "61022250": {
+   "name": "DOxSen",
+   "power": 18862546,
+   "server": 610,
+   "guildId": "6100003",
+   "guild": "Døminus"
+  },
   "61032569": {
    "name": "DODOREX",
    "guildId": "6100003",
@@ -5169,6 +5190,13 @@
    "power": 8235465,
    "server": 612,
    "guild": "Døminus"
+  },
+  "61214894": {
+   "name": "Zalea",
+   "power": 5659185,
+   "server": 612,
+   "guildId": "6120007",
+   "guild": "Family"
   },
   "61234164": {
    "name": "DOcream",
@@ -5412,6 +5440,13 @@
    "name": "GExNH",
    "power": 14171125,
    "server": 617,
+   "guildId": "6190011",
+   "guild": "GENESIS"
+  },
+  "61800235": {
+   "name": "GExKhoa",
+   "power": 9145602,
+   "server": 618,
    "guildId": "6190011",
    "guild": "GENESIS"
   },
@@ -5749,6 +5784,13 @@
    "guildId": "6270011",
    "power": 70623049,
    "server": 627,
+   "guild": "ViệtNam"
+  },
+  "62799118": {
+   "name": "ViTelex",
+   "power": 14460636,
+   "server": 627,
+   "guildId": "6270011",
    "guild": "ViệtNam"
   },
   "62799617": {
@@ -6157,6 +6199,13 @@
    "server": 634,
    "guild": "VIE"
   },
+  "63507102": {
+   "name": "BNQ2k9",
+   "power": 939595,
+   "server": 635,
+   "guildId": "6330009",
+   "guild": "เสี่ยว"
+  },
   "63507516": {
    "name": "VIETOAN",
    "guildId": "6350013",
@@ -6434,6 +6483,13 @@
    "name": "AECông",
    "power": 13357940,
    "server": 639,
+   "guildId": "6380008",
+   "guild": "AE638"
+  },
+  "64032741": {
+   "name": "AE3B",
+   "power": 14214436,
+   "server": 640,
    "guildId": "6380008",
    "guild": "AE638"
   },

@@ -8178,6 +8178,13 @@
    "server": 794,
    "guild": "power"
   },
+  "79456203": {
+   "name": "poMoon",
+   "power": 6695859,
+   "server": 794,
+   "guildId": "7940015",
+   "guild": "power"
+  },
   "79466104": {
    "name": "tewhub",
    "power": 5172420,
@@ -8745,6 +8752,13 @@
    "server": 803,
    "guild": "AE803"
   },
+  "80305293": {
+   "name": "tuama",
+   "power": 3374022,
+   "server": 803,
+   "guildId": "8030011",
+   "guild": "AE803"
+  },
   "80315876": {
    "name": "VNPcl",
    "power": 4272842,
@@ -8990,6 +9004,13 @@
    "server": 807,
    "guild": "FrightG"
   },
+  "80789822": {
+   "name": "NuMaiJe",
+   "power": 900841,
+   "server": 807,
+   "guildId": "8070011",
+   "guild": "Vie807"
+  },
   "80799434": {
    "name": "BonB",
    "power": 5108252,
@@ -9154,6 +9175,13 @@
   "81183572": {
    "name": "AExMậpx",
    "power": 3515141,
+   "server": 811,
+   "guildId": "8110010",
+   "guild": "AE811"
+  },
+  "81193154": {
+   "name": "AE",
+   "power": 1836479,
    "server": 811,
    "guildId": "8110010",
    "guild": "AE811"
@@ -9346,6 +9374,13 @@
    "server": 816,
    "guildId": "8160002",
    "guild": "AEViệt"
+  },
+  "81618225": {
+   "name": "DurbinDerrick",
+   "power": 540567,
+   "server": 816,
+   "guildId": "8160011",
+   "guild": "Phantom"
   },
   "81628418": {
    "name": "EVO",
@@ -10411,6 +10446,13 @@
    "guildId": "8340015",
    "guild": "VNxBoss"
   },
+  "83486885": {
+   "name": "NephXI",
+   "power": 1241450,
+   "server": 834,
+   "guildId": "8340026",
+   "guild": "LucidPH"
+  },
   "83486912": {
    "name": "VNxSang",
    "power": 1515504,
@@ -10806,6 +10848,13 @@
   "84204061": {
    "name": "KING",
    "power": 1247672,
+   "server": 842,
+   "guildId": "8420004",
+   "guild": "KING"
+  },
+  "84244688": {
+   "name": "FONAN",
+   "power": 666662,
    "server": 842,
    "guildId": "8420004",
    "guild": "KING"

@@ -5186,11 +5186,25 @@
    "server": 715,
    "guild": "TuTiên"
   },
+  "71557692": {
+   "name": "FlanaganMacy",
+   "power": 5256044,
+   "server": 715,
+   "guildId": "7150011",
+   "guild": "TuTiên"
+  },
   "71557817": {
    "name": "ViShiN",
    "guildId": "7150011",
    "power": 6709393,
    "server": 715,
+   "guild": "TuTiên"
+  },
+  "71557916": {
+   "name": "HoàngD",
+   "power": 13282231,
+   "server": 715,
+   "guildId": "7150011",
    "guild": "TuTiên"
   },
   "71567094": {
@@ -6176,6 +6190,13 @@
    "server": 735,
    "guild": "NiceZzz"
   },
+  "73668225": {
+   "name": "NgọcSơn",
+   "power": 3760835,
+   "server": 736,
+   "guildId": "7360009",
+   "guild": "VN"
+  },
   "73688627": {
    "name": "KHOI91",
    "power": 940603,
@@ -6750,6 +6771,13 @@
    "server": 746,
    "guild": "WINWIN"
   },
+  "74688000": {
+   "name": "QVieet",
+   "power": 4670196,
+   "server": 746,
+   "guildId": "7460011",
+   "guild": "WINWIN"
+  },
   "74688027": {
    "name": "OdellDion",
    "power": 335413,
@@ -7051,6 +7079,13 @@
    "guildId": "7520011",
    "guild": "ViệtNam"
   },
+  "75305591": {
+   "name": "anhtaxi",
+   "power": 1059591,
+   "server": 753,
+   "guildId": "7530011",
+   "guild": "VnTop"
+  },
   "75365381": {
    "name": "SaNam",
    "power": 8805916,
@@ -7282,6 +7317,13 @@
    "server": 755,
    "guild": "VNGangz"
   },
+  "75597916": {
+   "name": "VNGnurt",
+   "power": 1003414,
+   "server": 755,
+   "guildId": "7550003",
+   "guild": "VNGangz"
+  },
   "75608516": {
    "name": "Clouddd",
    "guildId": "7560011",
@@ -7292,6 +7334,13 @@
   "75608610": {
    "name": "Dark",
    "power": 7111759,
+   "server": 756,
+   "guildId": "7560011",
+   "guild": "Yametee"
+  },
+  "75618308": {
+   "name": "DuckettAria",
+   "power": 4772566,
    "server": 756,
    "guildId": "7560011",
    "guild": "Yametee"
@@ -7499,6 +7548,13 @@
    "server": 757,
    "guild": "PRO"
   },
+  "75779238": {
+   "name": "Zon",
+   "power": 818601,
+   "server": 757,
+   "guildId": "7570011",
+   "guild": "PRO"
+  },
   "75789019": {
    "name": "GibbRio",
    "guildId": "7570011",
@@ -7624,6 +7680,13 @@
    "server": 759,
    "guildId": "7590023",
    "guild": "GuildVN"
+  },
+  "75981037": {
+   "name": "Nguyên",
+   "power": 1990130,
+   "server": 759,
+   "guildId": "7590011",
+   "guild": "VnNo1"
   },
   "75991836": {
    "name": "Nianaaa",
