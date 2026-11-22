@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useLayoutEffect } from "react";
 import {
   completeHistorySlot,
   useHistoryPlayback,
@@ -10,10 +10,6 @@ export function useHistoryClock() {
   const index = useHistoryPlayback((state) => state.index);
   const duration = useHistoryPlayback((state) => state.duration);
   const frames = useHistoryPlayback((state) => state.frames);
-  const samples = useRef<number[]>([]);
-  useEffect(() => {
-    samples.current = [];
-  }, [frames]);
   useLayoutEffect(() => {
     if (status !== "playing" && status !== "paused") return;
     const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -92,7 +88,6 @@ export function useHistoryClock() {
       });
     const started = performance.now() - elapsed;
     let raf = 0;
-    let last = performance.now();
     const paint = () => {
       for (const { animation } of bindings.values())
         animation.currentTime = elapsed;
@@ -107,21 +102,9 @@ export function useHistoryClock() {
       }
     };
     const tick = (now: number) => {
-      samples.current.push(now - last);
-      last = now;
       elapsed = Math.min(duration, now - started);
       paint();
       if (elapsed >= duration) {
-        if (index === frames.length - 1) {
-          const sorted = [...samples.current].sort((a, b) => a - b);
-          useHistoryPlayback.setState({
-            metrics: {
-              p95: sorted[Math.floor(sorted.length * 0.95)] ?? 0,
-              frames: sorted.length,
-              slow: sorted.filter((ms) => ms > 33.4).length,
-            },
-          });
-        }
         completeHistorySlot();
       } else raf = requestAnimationFrame(tick);
     };

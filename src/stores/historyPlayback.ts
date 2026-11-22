@@ -18,7 +18,6 @@ interface HistoryState {
   index: number;
   duration: number;
   elapsed: number;
-  metrics?: { p95: number; frames: number; slow: number };
 }
 
 export const useHistoryPlayback = create<HistoryState>()(() => ({
@@ -62,7 +61,6 @@ export async function startHistory() {
   useHistoryPlayback.setState({
     status: "loading",
     missing: playlist.missing,
-    metrics: undefined,
   });
   try {
     const dumps = await Promise.all(

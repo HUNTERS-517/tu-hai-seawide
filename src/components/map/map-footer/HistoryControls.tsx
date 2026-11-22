@@ -37,7 +37,7 @@ export function HistoryPlayButton() {
         onClick={toggleHistory}
         disabled={loading || days.length < 2 || status === "loading"}
         aria-label={label}
-        title={`${label} · ${days.length} bản lưu · POC`}
+        title={`${label} · ${days.length} bản lưu`}
       >
         <Icon size={13} />
       </button>
@@ -93,19 +93,11 @@ export function HistoryProgress() {
         />
       </div>
       <span className={styles.note}>
-        POC · chuyển giữa các bản lưu
+        Chuyển giữa các bản lưu
         {state.missing.length
           ? ` · thiếu ${state.missing.map(dayLabel).join(", ")}`
           : ""}
       </span>
-      {state.status === "ended" && state.metrics && (
-        <span
-          className={styles.note}
-          title={`${state.metrics.frames} mẫu rAF, ${state.metrics.slow} mẫu trên 33,4ms; không phải số đo GPU`}
-        >
-          p95 {state.metrics.p95.toFixed(1)}ms/khung
-        </span>
-      )}
     </div>
   );
 }
